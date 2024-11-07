@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerámica 3D - Café Pintado</title>
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="cera.css">
+     <link rel="shortcut icon" href="icon/favicon - logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .model-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        margin: 2rem 0;
+      }
+      .model-viewer {
+        margin-left: 30px !important;
+        width: 100% !important;
+        height: 400px !important;
+        display: block;
+        margin: auto;
+        background-color: #737270;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) !important;
+        transition: 0.4s ease-in-out !important;
+      }
+      
+.dos{
+    width: 1030.094px !important; 
+    height: 400px !important;
+}
+
+      .model-viewer:hover{
+        transform: scale(1.05) !important;
+      }
+
+      .lead{
+        text-align: justify !important;
+      }
+
+      @media (max-width: 768px) {
+        .model-container{
+            flex-direction: column !important;
+            display: block !important;
+            width: 100% !important;
+        }
+        .model-viewer{
+          margin: auto !important;
+        }
+
+        .dos{
+            width: auto !important;
+        }
+      }
+
+      #navbar{
+        background: #25292e !important;
+      }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <div class="container">
+          <a class="navbar-brand" href="index.html">
+              <img src="img/Logo/logo3.png" alt="icono" width="180" height="50" class="imagene">
+          </a>
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="ceramicas.html">3D</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link btn btn-danger" style="padding: 9px 25px;" href="reserva.html">Reserva</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+    <!-- Contenedor de modelos 3D y descripción -->
+    <div class="container">
+        <!-- Modelo 1 -->
+        <div class="model-container">
+            <div class="description">
+                <h3 class="display-6 fw-bold">Elefante</h3>
+                <p class="lead">Descubre la majestuosidad de este elefante decorativo. Con detalles dorados y una pintura a mano, esta pieza será la protagonista en cualquier habitación. Su diseño exclusivo aporta elegancia y arte, haciendo que tu espacio se transforme en algo único.</p>
+            </div>
+            <div class="model-viewer">
+                <model-viewer src="model/ceramica.glb" alt="Elefante decorativo" camera-controls autoplay scale="1.2 1.2 1.2" camera-target="0m 0m 0m"   ></model-viewer>
+            </div>
+        </div>
+
+        <!-- Modelo 2 -->
+        <div class="model-container">
+            <div class="description">
+                <h3 class="display-6 fw-bold">Tortuga</h3>
+                <p class="lead">Esta tortuga de cerámica es perfecta para aquellos que buscan una pieza tranquila y serena. Con detalles finos y una forma clásica, es una pieza encantadora que añadirá un toque de naturaleza y elegancia a tu hogar.</p>
+            </div>
+            <div class="model-viewer dos">
+                <model-viewer src="model/tortuga.glb" alt="Búho de cerámica" camera-controls autoplay scale="1.2 1.2 1.2" camera-target="0m 0m 0m"></model-viewer>
+            </div>
+        </div>
+
+        <!-- Modelo 3 -->
+        <div class="model-container">
+            <div class="description">
+                <h3 class="display-6 fw-bold">Florero</h3>
+                <p class="lead">Este florero de estilo antiguo está diseñado para los amantes de la decoración clásica. Su meticuloso trabajo en cerámica y el estilo vintage lo convierten en la opción ideal para realzar cualquier habitación, añadiendo un aire sofisticado y atemporal.</p>
+            </div>
+            <div class="model-viewer">
+                <model-viewer src="model/florero.glb" alt="florero antiguo de cerámica" camera-controls autoplay></model-viewer>
+            </div>
+        </div>
+    </div>
+
+    <div class="conten_negro">
+      <div class="container footer text-white">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <p class="col-md-4 mb-0">©2024 | Cafe Pintado</p>
+
+              <div class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto imgl">
+                <img src="img/Logo/logo3.png" alt="icono" width="180" height="50">
+            </div>
+
+              <ul class="nav col-md-4 justify-content-end text-white">
+                  <li class="nav-item"><a href="index.html" class="nav-link px-2">Inicio</a></li>
+                  <li class="nav-item"><a href="ceramicas.html" class="nav-link px-2">3D</a></li>
+                  <li class="nav-item"><a href="contacto.html" class="nav-link px-2">Contacto</a></li>
+                  <li class="nav-item"><a href="index.html#nosotross" class="nav-link px-2">Nosotros</a></li>
+              </ul>
+              
+          </footer>
+
+          <div class="d-flex flex-column align-items-center mt-4">
+              <h5 class="display-6 mb-3">¡Suscríbete para recibir novedades!</h5>
+              <form class="d-flex flex-column align-items-center" id="subscribeForm">
+                  <div class="input-group mb-3">
+                      <input type="email" class="form-control" placeholder="Ingresa tu correo" id="emailInput"
+                          required>
+                      <button class="btn btn-danger" type="submit">Suscribirse</button>
+                  </div>
+              </form>
+          </div>
+
+
+          <hr class="border-dark">
+
+          <div class="d-flex justify-content-center mt-3 icon">
+              <a href="https://www.facebook.com/" target="_blank" class="me-3">
+                  <i class="fab fa-facebook fa-2x text-white"></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                  <i class="fab fa-instagram fa-2x text-white"></i> 
+              </a>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal footer -->
+  <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="welcomeModalLabel">¡Bienvenido a Café Pintado!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  Gracias por suscribirte. Ahora formarás parte de nuestra comunidad creativa. ¡Te esperamos en Café
+                  Pintado para que sigas creando!
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    <!-- Bootstrap JS y Model Viewer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/modelo.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

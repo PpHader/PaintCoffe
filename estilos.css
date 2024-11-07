@@ -1,0 +1,436 @@
+.navbar {
+    color: white;
+    background: #25292e;
+}
+
+#navbar {
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.contenido-hero {
+    margin-top: 3rem;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+/* Navbar cuando tiene fondo negro */
+.bg-dark-scrolled {
+    background-color: rgba(37, 41, 46, 0.8); 
+    /* O cualquier color oscuro */
+}
+
+.hero-fondo1 {
+    position: relative;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.7) 50%), url(img/fondo/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.hero-fondo1 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.container .row {
+    position: relative;
+    z-index: 2;
+    /* Coloca el contenido encima de la superposición */
+}
+
+.barra {
+    border-bottom: 4px solid yellow;
+}
+
+.conten {
+    background: white !important;
+}
+
+.conten2 {
+    background: white !important;
+    padding: 2px 0px;
+}
+
+.conten_negro {
+    background: #25292e;
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        position: static !important;
+        min-height: 0rem !important;
+        padding-top: 0rem !important;
+        z-index: 1000 !important;
+    }
+
+    .hero-fondo {
+        margin-top: 0 !important;
+        /* Evita márgenes negativos */
+        padding: 1rem;
+        /* Asegura que haya espacio suficiente en pantallas pequeñas */
+    }
+
+    .hero-fondo1 {
+        margin-top: 0 !important;
+        /* Ajusta márgenes en móviles */
+        padding: 1rem;
+        /* Agrega padding para asegurar que el contenido esté bien alineado */
+    }
+
+    .contenido-hero {
+        margin-top: 0;
+        /* Asegura que no haya márgenes innecesarios */
+        padding: 1rem;
+    }
+
+    /* Asegúrate de que las imágenes se ajusten en vista móvil */
+    .hero-fondo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .img {
+        height: 300px !important;
+    }
+}
+
+.nav-item a {
+    font-size: 17px;
+    margin-right: 10px;
+    color: white;
+}
+
+.navbar-brand img {
+    margin-left: 10px;
+}
+
+.nav-link.btn {
+    color: white;
+    background-color: #dc3545;
+    border-color: white !important;
+    transition: 0.3s ease-in-out;
+
+}
+
+.nav-link.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.custom-btn {
+    transition: 0.3s ease-in-out !important;
+    border-color: white !important;
+}
+
+.custom-btn:hover {
+    background-color: white !important;
+    /* Usamos !important para sobrescribir Bootstrap */
+    color: black !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.img {
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    /* Efecto suave para el cambio de tamaño y bordes */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.img:hover {
+    transform: scale(1.1);
+    /* Aumenta el tamaño al 110% */
+    border-radius: 20px;
+    /* Puedes cambiar el tamaño del radio de los bordes al pasar el puntero */
+}
+
+/*servicios */
+.service-section {
+    background-color: #f8f9fa; /* Fondo suave para la sección */
+    padding: 50px 0;
+}
+
+.service-card {
+    background-color: #ffffff; /* Fondo blanco para las tarjetas */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Efecto de elevación en hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #dee2e6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #6c757d;
+    margin: 0 auto 15px auto;
+}
+
+.service-btn {
+    color: #ffffff;
+    border: none;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.service-btn:hover {
+    background-color: #dc3545 !important;
+    color: white !important;
+    transform: scale(1.05); /* Hace que el botón crezca ligeramente */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.featurette {
+    margin-top: 50px;
+}
+
+@media(min-width:780px) {
+    .img {
+        height: auto;
+        width: auto;
+    }
+}
+
+/* Estilo para el botón de hamburguesa */
+.navbar-toggler {
+    border-color: transparent;
+    /* Quitar borde si lo hay */
+    border: 1px solid white;
+}
+
+/* Cambiar el color del icono de hamburguesa a blanco */
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Cambiar el color de los nav-items a blanco */
+.nav-link {
+    color: white;
+    /* Asegurarse de que el texto sea blanco */
+}
+
+
+/* Línea separadora que solo aparece en vista móvil */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        /* Línea blanca */
+        margin-top: 10px;
+        /* Espacio entre el icono y la línea */
+        padding-top: 10px;
+        /* Espacio entre la línea y los nav-items */
+    }
+}
+
+.content-img {
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.zoom-effect {
+    transition: transform 0.4s ease-in-out;
+    /* Suaviza la animación del zoom */
+    object-fit: cover;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.5, 1.5);
+    /* Aumenta la escala de la imagen al 110% al pasar el cursor */
+}
+
+@media (max-width: 768px) {
+    .zoom-effect:hover {
+        transform: none !important;
+    }
+
+    .zoom-effect {
+        height: 350px !important;
+    }
+}
+
+.footer {
+    padding-bottom: 50px !important;
+    padding-top: 30px;
+}
+
+.nav-item {
+    padding: 0px 5px;
+    /* Espaciado interno para los enlaces */
+}
+
+.card {
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3) !important;
+    transition: transform 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    
+}
+
+.testimonial {
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.2s;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#historia {
+    padding: 50px 0;
+}
+
+#historia h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#historia p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.client-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonial-container {
+    margin: 40px 0;
+}
+
+.testimonial-date {
+    font-size: 0.7em;
+    color: #888;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.conten-nosotros {
+    background: linear-gradient(to bottom, #25292e, #4b4747);
+}
+
+#ubicacion {
+    padding: 3rem 0;
+}
+
+#ubicacion h2 {
+    color: #333;
+}
+
+#ubicacion .map-container {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#ubicacion p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    h5{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .imgl{
+        margin-top: 10px !important;
+    }
+
+    .nav {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .logoo {
+        margin-top: 40px !important;
+    }
+
+    .nav-item {
+        margin-bottom: 5px;
+        /* Espaciado entre los enlaces */
+    }
+}
+
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px; 
+    height: 60px; 
+    background-color: #25d366; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    z-index: 1000; 
+}
+
+#whatsapp-button img {
+    width: 40px; 
+    height: 40px; 
+}
+
+#whatsapp-button:hover {
+    transform: scale(1.1); 
+}
+
+.nav-link:hover{
+    color: white !important;
+    border-bottom: 1px solid white;
+}
+
+
+
+

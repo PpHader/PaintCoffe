@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Pintado | Puerto Tejada </title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="cards-menu.css">
+    <link rel="stylesheet" href="porsi.css">
+    <link rel="stylesheet" href="cera-index.css">
+    <link rel="shortcut icon" href="icon/favicon - logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="hero-fondo1 position-relative">
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top d-lg-block bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/Logo/logo3.png" alt="icono" width="180" height="50" class="imagene">
+                </a>
+        
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ceramicas.html">3D</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-danger" style="padding: 9px 25px;" href="reserva.html">Reserva</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    
+        <!-- Hero Section -->
+        <div class="container col-10 mb-4 position-relative contenido-hero">
+            <!-- Superposición de color -->
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="img/cofej.webp" class="d-block mx-lg-auto img-fluid img" style="width: 100%; height: 550px;" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-white lh-1 mb-3 ">Disfruta, crea y relájate en <span class="barra">Café Pintado</span></h1>
+                    <p class="lead text-white">Disfruta de un delicioso café en un ambiente acogedor mientras pintas tus propias cerámicas. Cada pincelada cuenta una historia, convirtiendo cada momento en un recuerdo inolvidable. Relájate, comparte y deja volar tu imaginación en compañía de buena comida y una experiencia única.</p>
+                    <div class="d-flex justify-content-center text-center">
+                        <a href="reserva.html#aqui" class="btn btn-danger d-inline-flex align-items-center justify-content-center btn-lg w-50 custom-btn" type="button">
+                            Reserva tu mesa
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h2 class="display-4 text-center mb-5">Nuestros Servicios</h2>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="fw-normal mt-3">Cerámica Personalizada</h3>
+                        <p class="lead">Explora tu creatividad pintando piezas únicas de cerámica en un ambiente relajado. ¡Haz de cada pieza una obra de arte personal!</p>
+                        <button class="btn service-btn" data-bs-toggle="modal" data-bs-target="#ceramicaModal">Ver detalles »</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3 class="fw-normal mt-3">Talleres Creativos</h3>
+                        <p class="lead">Únete a nuestros talleres grupales para aprender nuevas técnicas y disfrutar de una experiencia creativa compartida.</p>
+                        <button class="btn service-btn" data-bs-toggle="modal" data-bs-target="#talleresModal">Ver detalles »</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor donde se cargarán los modales -->
+    <div id="modals-container"></div>
+
+    <div class="conten">
+        <div class="container pb-5">
+            <div class="row">
+                <h2 class=" display-4 text-center mb-5 mt-5">Delicias para Acompañar tu Café</h2>
+                <div class="col-md-4">
+                    <div class="profile-card-2">
+                        <img src="img/comida/sandwich.jpg" class="img img-responsive" alt="Imagen de un sandwich acompañado de un cafe">
+                        <div class="profile-name">SANDIWICH</div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="profile-card-2">
+                        <img src="img/comida/2.png" class="img img-responsive" alt="Imagen de unas galletas acompañado de un cafe">
+                        <div class="profile-name">GALLETAS</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="profile-card-2">
+                        <img src="img/comida/pan.jpg" class="img img-responsive" alt="Imagen de un pan acompañado de un cafe">
+                        <div class="profile-name">PAN</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="profile-card-2">
+                        <img src="img/comida/pastel.jpg" class="img img-responsive" alt="Imagen de un pastel acompañado de un cafe">
+                        <div class="profile-name">PASTEL</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="profile-card-2">
+                        <img src="img/comida/heladooo.jpg" class="img img-responsive" alt=" Imagen de un cafe y helado">
+                        <div class="profile-name">Helado</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="profile-card-2">
+                        <img src="img/comida/crepas.jpg" class="img img-responsive" alt="Imagen de una crepa acompañado de un cafe">
+                        <div class="profile-name">CREPAS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="conten_negro">
+        <section class="py-5 text-center text-white">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="display-4">Descubre Nuestras Cerámicas</h2>
+                        <p class="lead">Deja volar tu imaginación con nuestra colección de cerámicas, listas para ser pintadas y personalizadas según tu estilo. Disfruta creando arte mientras degustas nuestras delicias.</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm card-ani rounded">
+                            <img src="img/figuras/elephante.jpg" class="card-img-top rounded-top" style="width: auto; height: 245px;" alt="Figura de cerámica 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Elefante</h5>
+                                <p class="card-text text-muted">¡Dale vida a esta majestuosa figura! Perfecta para quienes buscan una pieza única llena de personalidad. Personalízala a tu estilo y crea algo inolvidable.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm card-ani rounded">
+                            <img src="img/figuras/torutga.jpg" class="card-img-top rounded-top" style="width: auto; height: 245px;" alt="Figura de cerámica 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Tortuga</h5>
+                                <p class="card-text text-muted">Relájate mientras pintas esta tranquila tortuga. Con su diseño elegante y sereno, es ideal para los amantes de la naturaleza y la calma.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm card-ani rounded">
+                            <img src="img/figuras/florerooo.webp" class="card-img-top rounded-top" style="width: auto; height: 245px;" alt="Figura de cerámica 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Florero</h5>
+                                <p class="card-text text-muted">Transforma este florero en una obra de arte personalizada. Ideal para darle un toque especial a tu hogar o regalar algo único y significativo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="text-end">
+                    <a href="ceramicas.html" class="btn btn-danger custom-btn mt-4">Ver Modelos 3D</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="conten2">
+        <div class="container testimonial-container text-center pd-5">
+            <h2 class="display-5 text-center mb-4">Opiniones de Nuestros Clientes</h2>
+            <div class="row" style="justify-content: space-around;">
+                <div class="col-md-4">
+                    <div class="testimonial position-relative">
+                        <span class="testimonial-date">2 de Octubre, 2024</span>
+                        <img src="img/Nueva carpeta/alex.jpg" alt="Cliente 1" class="client-photo">
+                        <h5 class="display-6">Alex David</h5>
+                        <p class="lead">"¡Una experiencia increíble! Café Pintado no solo ofrece un excelente café, sino también un espacio para desconectar y explorar mi lado artístico. Pintar figuras de cerámica mientras disfruto de un buen café es algo que definitivamente volveré a hacer."</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="testimonial position-relative">
+                        <span class="testimonial-date">10 de Octubre, 2024</span>
+                        <img src="img/Nueva carpeta/maria.jpg" alt="Cliente 2" class="client-photo">
+                        <h5 class="display-6">María López</h5>
+                        <p class="lead">El ambiente es perfecto para relajarse y dejar volar la creatividad. Me encanta que aquí puedo desconectar y pintar sin prisa. Además, el personal es muy amable y el café delicioso. ¡Ya estoy planeando mi próxima visita!</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="testimonial position-relative">
+                        <span class="testimonial-date">8 de Octubre, 2024</span>
+                        <img src="img/Nueva carpeta/ne.png" alt="Cliente 3" class="client-photo">
+                        <h5 class="display-6">Carlos González</h5>
+                        <p class="lead">Café Pintado es el lugar perfecto para pasar una tarde agradable. La calidad de los materiales para pintar es excelente y las figuras de cerámica tienen muchos detalles. Es una experiencia única que recomiendo a cualquiera que quiera probar algo diferente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="conten-nosotros" id="nosotross">
+        <h2 class="display-5 mb-5 pt-4 text-center text-white">Nuestra Historia</h2>
+        <div class="container text-white">
+            <div class="row featurette d-flex align-items-center">
+                <div class="col-md-7 mt-5">
+                    <p class="lead text-star">En <strong>Café Pintado</strong>, creemos que cada persona es un artista en su interior. Nacimos con la misión de crear un espacio donde la creatividad y la tranquilidad se fusionan para ofrecer una experiencia única. 
+                    Nuestros valores se centran en la creatividad, la comunidad y la sostenibilidad, brindando un lugar donde todos pueden relajarse, disfrutar de una taza de café y expresarse a través del arte en cerámica.</p>
+                </div>
+                <div class="col-md-5 content-img">
+                    <img src="img/mision y vision/mision.jpg" alt="Imagen de un sitio de restaurante"
+                        class="zoom-effect img-fluid" style="width: 100%; height: 400px;">
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 text-white">
+            <div class="row featurette d-flex align-items-center">
+                <div class="col-md-7 order-md-2">
+                    <p class="lead text-end">Nuestro objetivo es ofrecer un ambiente acogedor y libre de estrés, donde los clientes puedan desconectarse y explorar su creatividad. Creemos en el poder del arte para crear conexiones y en la importancia de dar tiempo a uno mismo para disfrutar de actividades que nutren el alma. Ven y descubre la magia de <strong>Café Pintado</strong>, donde cada cerámica pintada cuenta una historia única.
+                    </p></p>
+                </div>
+                <div class="col-md-5 order-md-1 content-img">
+                    <img src="img/mision y vision/vision.jpeg" alt="Imagen personas felices en un restaurante"
+                        class="zoom-effect img-fluid" style="width: 100%; height: 400px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="ubicacion" class="my-5">
+        <div class="container">
+            <h2 class="display-5 text-center mb-4">Nuestra Ubicación</h2>
+            <p class="text-center lead">Visítanos en "Café Pintado" y disfruta de una experiencia creativa en un ambiente relajante.</p>
+            
+            <div class="map-container rounded shadow-lg mt-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.4554456081337!2d-76.42472515267782!3d3.236275539059743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3a766652819add%3A0x2caeb98013517d90!2sPuerto%20Tejada%2C%20Cauca!5e0!3m2!1ses!2sco!4v1730763196652!5m2!1ses!2sco" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/3113901549?text=¡Hola!%20Bienvenido%20a%20Cafe%20Pintado." id="whatsapp-button" target="_blank">
+        <img src="img/fondo/whsa.png" alt="WhatsApp" />
+    </a>
+    
+
+    <div class="conten_negro">
+        <div class="container footer text-white">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0">©2024 | Cafe Pintado</p>
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto imgl">
+                    <img src="img/Logo/logo3.png" alt="icono" width="180" height="50">
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end text-white">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2">Inicio</a></li>
+                    <li class="nav-item"><a href="ceramicas.html" class="nav-link px-2">3D</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link px-2">Contacto</a></li>
+                    <li class="nav-item"><a href="#nosotross" class="nav-link px-2">Nosotros</a></li>
+                </ul>
+                
+            </footer>
+
+            <div class="d-flex flex-column align-items-center mt-4">
+                <h5 class="display-6 mb-3">¡Suscríbete para recibir novedades!</h5>
+                <form class="d-flex flex-column align-items-center" id="subscribeForm">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Ingresa tu correo" id="emailInput"
+                            required>
+                        <button class="btn btn-danger" type="submit">Suscribirse</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <hr class="border-dark">
+
+            <div class="d-flex justify-content-center mt-3 icon">
+                <a href="https://www.facebook.com/" target="_blank" class="me-3">
+                    <i class="fab fa-facebook fa-2x text-white"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram fa-2x text-white"></i> 
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal footer -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="welcomeModalLabel">¡Bienvenido a Café Pintado!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Gracias por suscribirte. Ahora formarás parte de nuestra comunidad creativa. ¡Te esperamos en Café
+                    Pintado para que sigas creando!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/nav.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/modales.js"></script>
+
+</body>
+
+</html>

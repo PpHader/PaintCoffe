@@ -1,0 +1,224 @@
+.navbar {
+    color: white;
+    background: #25292e;
+}
+
+#navbar {
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.contenido-hero{
+    margin-top: 3rem;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+/* Navbar cuando tiene fondo negro */
+.bg-dark-scrolled {
+    background-color: #25292e; /* O cualquier color oscuro */
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.hero-fondo1 {
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(img/fondo/fondo.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.bg-cover {
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    z-index: 2;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.scroll-icon {
+    font-size: 4rem; /* Aumentar el tamaño del icono */
+    color: white;
+    animation: bounce 1.5s infinite;
+    cursor: pointer;
+    margin-top: 30px; /* Espacio adicional */
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px); /* Mayor altura en el salto */
+    }
+    60% {
+        transform: translateY(-10px); /* Ajuste en el salto */
+    }
+}
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.btn-custom {
+    background-color: #e63946;
+    color: white;
+}
+.btn-custom:hover {
+    background-color: #d62839;
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        position: static !important;
+        min-height: 0rem !important;
+        padding-top: 0rem !important;
+    }
+
+    .hero-fondo {
+        margin-top: 0 !important; /* Evita márgenes negativos */
+        padding: 1rem; /* Asegura que haya espacio suficiente en pantallas pequeñas */
+    }
+    
+    .hero-fondo1 {
+        margin-top: 0 !important; /* Ajusta márgenes en móviles */
+        padding: 1rem; /* Agrega padding para asegurar que el contenido esté bien alineado */
+    }
+    
+    .contenido-hero {
+        margin-top: 0; /* Asegura que no haya márgenes innecesarios */
+        padding: 1rem;
+    }
+
+    /* Asegúrate de que las imágenes se ajusten en vista móvil */
+    .hero-fondo img {
+        max-width: 100%;
+        height: auto;
+    }
+    #contact-form{
+        margin-bottom: 20px !important;
+    }
+}
+
+.nav-item a {
+    font-size: 17px;
+    margin-right: 10px;
+    color: white;
+}
+
+.navbar-brand img{
+    margin-left: 10px;
+}
+
+.nav-link.btn {
+    color: white; 
+    background-color: #dc3545; 
+    border-color: white !important; 
+    transition: 0.3s ease-in-out;
+
+}
+
+.nav-link.btn:hover{
+    background-color: white;
+    color: black;
+}
+.navbar-toggler {
+    border-color: transparent; /* Quitar borde si lo hay */
+    border: 1px solid white;
+}
+
+/* Cambiar el color del icono de hamburguesa a blanco */
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Cambiar el color de los nav-items a blanco */
+.nav-link {
+    color: white; /* Asegurarse de que el texto sea blanco */
+}
+
+
+/* Línea separadora que solo aparece en vista móvil */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        border-top: 1px solid rgba(255, 255, 255, 0.5); /* Línea blanca */
+        margin-top: 10px; /* Espacio entre el icono y la línea */
+        padding-top: 10px; /* Espacio entre la línea y los nav-items */
+    }
+}
+
+.parr{
+    font-size: 30px !important;
+}
+
+#contact-form{
+    margin-bottom: 85px !important;
+}
+
+.conten_negro{
+    background: #25292e;
+}
+
+.footer{
+    padding-bottom: 50px !important;
+    padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    h5{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .imgl{
+        margin-top: 10px !important;
+    }
+
+    .nav {
+        flex-direction: column; 
+        margin-top: 10px; 
+    }
+
+    .logoo{
+        margin-top: 40px !important;
+    }
+    
+    .nav-item {
+        margin-bottom: 5px; /* Espaciado entre los enlaces */
+    }
+}
+
+.nav-link:hover{
+    color: white !important;
+    border-bottom: 1px solid white;
+}
+
+.contact-card {
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.contact-card:hover {
+    transform: scale(1.05);
+}
+

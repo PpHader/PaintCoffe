@@ -1,0 +1,31 @@
+
+/* Estilos para los modales */
+.modal-content {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+    background-color: #f7f3e9;
+    border-bottom: none;
+}
+
+.modal-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.modal-body {
+    font-size: 1rem;
+    color: #555;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+/* Iconos */
+.list-unstyled li {
+    font-size: 1rem;
+    color: #555;
+}
